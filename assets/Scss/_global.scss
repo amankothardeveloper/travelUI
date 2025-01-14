@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --theme-color: #35aff4;
+  --text-color: #909090;
+  --text-color-alt: #454545;
+  --border-color: #b7b7b7;
+  --dark-color: #181818;
+  --l-bg-color: #f0f0f0;
+  --star-color: #f9b811;
+  font-size: 18px;
+  --theme-font: "travel";
+  --container-size: 1200px;
+}
+
+body {
+  font-family: var(--theme-font);
+  font-size: 1rem;
+  font-weight: 450;
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.btn{
+  
+}

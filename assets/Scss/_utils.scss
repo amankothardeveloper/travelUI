@@ -1,0 +1,103 @@
+// Grid and Containers
+.site-container {
+  max-width: var(--container-size);
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+// flex------------
+.flex {
+  display: flex;
+}
+
+$justify-options: flex-start, center, flex-end, space-between;
+
+@each $value in $justify-options {
+  .justify-#{$value} {
+    justify-content: #{$value};
+  }
+}
+
+$align-options: start, center, flex-end;
+
+@each $value in $justify-options {
+  .align-#{$value} {
+    justify-content: #{$value};
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+// list -------------
+.list-null {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// padding and margins ----------------
+$spaces: 1;
+
+@each $space in $spaces {
+  .pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
+  }
+
+  .px-#{$space} {
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
+  }
+
+
+
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin-top: #{$space}rem;
+    margin-bottom: #{$space}rem;
+  }
+
+  .mx-#{$space} {
+    margin-left: #{$space}rem;
+    margin-right: #{$space}rem;
+  }
+}
