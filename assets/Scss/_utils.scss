@@ -10,7 +10,14 @@
     right: 1rem;
   }
 }
+// Positions and transformations -------------------
+$positions: relative, absolute, static, sticky;
 
+@each $value in $positions {
+  .position-#{$value} {
+    position: #{$value};
+  }
+}
 // flex------------
 .flex {
   display: flex;
@@ -28,7 +35,7 @@ $align-options: start, center, flex-end;
 
 @each $value in $justify-options {
   .align-#{$value} {
-    justify-content: #{$value};
+    align-items: #{$value};
   }
 }
 
@@ -44,7 +51,7 @@ $align-options: start, center, flex-end;
 }
 
 // padding and margins ----------------
-$spaces: 1;
+$spaces: 1, 2;
 
 @each $space in $spaces {
   .pl-#{$space} {
@@ -73,8 +80,6 @@ $spaces: 1;
     padding-right: #{$space}rem;
   }
 
-
-
   .ml-#{$space} {
     margin-left: #{$space}rem;
   }
@@ -100,4 +105,40 @@ $spaces: 1;
     margin-left: #{$space}rem;
     margin-right: #{$space}rem;
   }
+}
+
+// colors --------------------
+.theme-color {
+  color: var(--theme-color);
+}
+.theme-fill {
+  fill: var(--theme-color);
+}
+
+// width and height---------------
+
+$sizes: 25, 50, 75, 100;
+
+@each $value in $sizes {
+  .w-#{$value} {
+    width: #{$value + "%"};
+  }
+  .h-#{$value} {
+    height: #{$value + "%"};
+  }
+}
+
+// Others -----------------------
+
+.object-cover {
+  object-fit: cover;
+}
+.object-contain {
+  object-fit: contain;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-overlay {
+  overflow: overlay;
 }
