@@ -11,16 +11,18 @@
 :root {
   --theme-color: #35aff4;
   --text-color: #909090;
+  --l-grey: #ccc;
   --white: #fff;
-  --shadow-color:#324B682B;
+  --shadow-color: #324b682b;
   --text-color-alt: #454545;
   --border-color: #b7b7b7;
+  --border-color-light: rgba(183, 183, 183, 0.3);
   --dark-color: #181818;
   --l-bg-color: #f0f0f0;
   --star-color: #f9b811;
   font-size: 16px;
   --theme-font: "travel";
-  --container-size: 1200px;
+  --container-size: 1300px;
 }
 
 body {
@@ -42,6 +44,10 @@ h6 {
 
 .h1 {
   font-size: 4.5rem;
+}
+
+p {
+  line-height: 1.688rem;
 }
 
 a {
@@ -338,9 +344,61 @@ section.hero-sec {
   padding: 3.75rem 0;
 }
 section.hero-sec .search-container {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-color-light);
   padding: 0.75rem 1rem;
   border-radius: 1rem;
+}
+section.hero-sec .search-container .location-cont:after {
+  content: "";
+  position: absolute;
+  left: calc(100% + 1rem);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  background: var(--text-color);
+  height: 50%;
+}
+section.hero-sec .search-container input {
+  border: none;
+  padding: 0.5rem;
+  margin: 0 -0.5rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+section.hero-sec .search-container input:focus-visible {
+  background: var(--l-bg-color);
+  outline: none;
+}
+section.hero-sec .search-container input::-moz-placeholder {
+  color: var(--text-color);
+}
+section.hero-sec .search-container input::placeholder {
+  color: var(--text-color);
+}
+section.hero-sec .search-container input[type=datetime-local] {
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-family: inherit;
+}
+section.hero-sec .search-container input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+section.hero-sec .search-container span.label {
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+section.hero-sec .search-container .btn.theme-btn {
+  border: none;
+  background: var(--theme-color);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+section.hero-sec .search-container .btn.theme-btn svg {
+  fill: var(--white);
 }
 section.hero-sec .site-container > .flex {
   -moz-column-gap: 5rem;
@@ -403,7 +461,117 @@ section.hero-sec .image-sec .rating-demo {
   background: var(--white);
   padding: 0.65rem;
   border-radius: 1rem;
-  top: 8%;
-  left: 0;
+  top: 10%;
+  left: 2rem;
   box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+}
+section.hero-sec .image-sec .rating-demo .thumb-cont {
+  width: 3.625rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.5rem;
+}
+section.hero-sec .image-sec .rating-demo h5 {
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.8rem;
+}
+section.hero-sec .image-sec .rating-demo p {
+  font-size: 0.9rem;
+}
+section.hero-sec .image-sec .rating-demo .rate {
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+}
+section.hero-sec .image-sec .rating-demo .rate svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--star-color);
+}
+section.hero-sec .image-sec .scroll-down-anim {
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: calc(33% - 1rem);
+  aspect-ratio: 1/1;
+}
+section.hero-sec .image-sec .scroll-down-anim svg {
+  width: 80%;
+  height: 80%;
+  animation: rotate 30s infinite linear;
+  transition: 0.5s;
+}
+section.hero-sec .image-sec .scroll-down-anim svg .st0 {
+  font-size: 2rem;
+  letter-spacing: 2.2rem;
+  transition: 0.5s;
+  color: var(--dark-color);
+}
+section.hero-sec .image-sec .scroll-down-anim a {
+  left: 50%;
+  top: 50%;
+  border: 0.2rem solid var(--dark-color);
+  height: 2.875rem;
+  width: 1.625rem;
+  border-radius: 10rem;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+section.hero-sec .image-sec .scroll-down-anim a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0.65rem;
+  height: 0.65rem;
+  background: var(--dark-color);
+  transform: translate(-50%, -0.33rem);
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+section.hero-sec .image-sec .scroll-down-anim:hover svg {
+  animation: rotate 5s infinite linear;
+}
+section.hero-sec .image-sec .scroll-down-anim:hover svg .st0 {
+  fill: var(--theme-color);
+}
+section.hero-sec .image-sec .scroll-down-anim:hover a {
+  border-color: var(--theme-color);
+}
+section.hero-sec .image-sec .scroll-down-anim:hover a:after {
+  bottom: 100%;
+  background: var(--theme-color);
+  transform: translate(-50%, 1rem);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section.hero-sec .social-info-container .lable {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: normal;
+}
+section.hero-sec .social-info-container ul.social-links {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+section.hero-sec .social-info-container ul.social-links li a {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--l-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 0.2rem;
+  fill: var(--text-color);
+  transition: 0.2s;
+}
+section.hero-sec .social-info-container ul.social-links li a:hover {
+  background: var(--theme-color);
+  fill: var(--white);
 }/*# sourceMappingURL=main.css.map */

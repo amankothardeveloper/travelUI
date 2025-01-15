@@ -38,86 +38,95 @@
     <section class="hero-sec">
       <div class="site-container">
         <div class="flex">
-          <div class="content-sec w-50 pt-1">
-            <h1 class="h1 mb-2">Discover your favorite place with us</h1>
-            <p class="mb-2">
-              Your journey begins here with our curated travel experiences.
-              Discover new horizons, create lasting memories, and explore the
-              world with our expertly crafted itineraries.
-            </p>
-            <div class="search-container flex justify-space-between">
-              <div class="flex">
-                <div class="location-cont">
-                  <label for="location" class="flex theme-fill">
-                    <svg>
-                      <use
-                        xlink:href="./assets/Images/svg/SVG-Database.svg#map"
-                      ></use>
-                    </svg>
-                    <div class="input-form flex flex-column">
-                      <span class="label">Locations</span>
-                      <input type="text" name="location" id="location" />
-                    </div>
-                  </label>
+          <div class="content-sec w-50 pt-1 flex flex-column justify-space-between">
+            <div>
+              <h1 class="h1 mb-2">Discover your favorite place with us</h1>
+              <p class="mb-2">
+                Your journey begins here with our curated travel experiences.
+                Discover new horizons, create lasting memories, and explore the
+                world with our expertly crafted itineraries.
+              </p>
+              <div class="search-container flex justify-space-between">
+                <div class="flex">
+                  <div class="location-cont mr-1 position-relative">
+                    <label for="location" class="flex theme-fill">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#map"
+                        ></use>
+                      </svg>
+                      <div class="input-form flex flex-column ml-1">
+                        <span class="label">Locations</span>
+                        <input
+                          type="text"
+                          name="location"
+                          id="location"
+                          placeholder="e.g Bali, Indonesia"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                  <div class="date-n-time-cont ml-1">
+                    <label for="data-n-time" class="flex theme-fill">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#calendar"
+                        ></use>
+                      </svg>
+                      <div class="input-form flex flex-column ml-1">
+                        <span class="label">Date and time</span>
+                        <input
+                          type="datetime-local"
+                          name="dataTime"
+                          id="dataTime"
+                        />
+                      </div>
+                    </label>
+                  </div>
                 </div>
-                <div class="date-n-time-cont">
-                  <label for="data-n-time" class="flex theme-fill">
-                    <svg>
-                      <use
-                        xlink:href="./assets/Images/svg/SVG-Database.svg#calendar"
-                      ></use>
-                    </svg>
-                    <div class="input-form flex flex-column">
-                      <span class="label">Date and time</span>
-                      <input
-                        type="datetime-local"
-                        name="dataTime"
-                        id="dataTime"
-                      />
-                    </div>
-                  </label>
-                </div>
-              </div>
 
-              <button type="submit" class="btn theme-btn">
-                <svg>
-                  <use
-                    xlink:href="./assets/Images/svg/SVG-Database.svg#search"
-                  ></use>
-                </svg>
-              </button>
+                <button type="submit" class="btn theme-btn">
+                  <svg>
+                    <use
+                      xlink:href="./assets/Images/svg/SVG-Database.svg#search"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="social-info-container">
-              <h4 class="lable">Follow Us</h4>
-              <ul class="social-links">
-                <li>
-                  <a href="#">
-                    <svg>
-                      <use
-                        xlink:href="./assets/Images/svg/SVG-Database.svg#facebook"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg>
-                      <use
-                        xlink:href="./assets/Images/svg/SVG-Database.svg#instagram"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <svg>
-                      <use
-                        xlink:href="./assets/Images/svg/SVG-Database.svg#twitter"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <div>
+              <div class="social-info-container flex align-center mt-2">
+                <h4 class="lable mr-1">Follow Us</h4>
+                <ul class="social-links list-null flex">
+                  <li>
+                    <a href="#">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="image-sec w-50">
@@ -130,12 +139,12 @@
               >
                 <img
                   src="./assets/Images/jpeg/hero-image.jpg"
-                  alt="Hero Image"
+                  alt="Hero"
                   class="w-100 h-100 object-cover"
                 />
               </div>
               <div class="rightBottom-clip"></div>
-              <div class="rating-demo flex position-absolute">
+              <div class="rating-demo flex position-absolute align-center">
                 <div
                   class="thumb-cont flex align-center justify-center overflow-hidden"
                 >
@@ -145,12 +154,50 @@
                     class="w-100 h-100 object-cover"
                   />
                 </div>
+                <div class="flex flex-column ml-1">
+                  <div class="flex">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
+                  </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
+                </div>
+              </div>
+              <div
+                class="scroll-down-anim position-absolute flex justify-center align-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 500 500"
+                >
+                  <defs>
+                    <path
+                      id="path"
+                      d="M449.6,250c0,111.5-89.4,201.8-199.6,201.8S50.4,361.5,50.4,250,139.8,48.2,250,48.2s199.6,90.4,199.6,201.8Z"
+                    />
+                  </defs>
+                  <text>
+                    <textPath xlink:href="#path" class="st0">
+                      SCROLLDOWN.SCROLLDOWN.
+                    </textPath>
+                  </text>
+                </svg>
+                <a href="#slider" class="scroll-link position-absolute"></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Hero Sections Ends --------------------------------- -->
     <script src="./assets/Scripts/script.js"></script>
   </body>

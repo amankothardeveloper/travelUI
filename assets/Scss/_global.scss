@@ -6,16 +6,18 @@
 :root {
   --theme-color: #35aff4;
   --text-color: #909090;
+  --l-grey: #ccc;
   --white: #fff;
-  --shadow-color:#324B682B;
+  --shadow-color: #324b682b;
   --text-color-alt: #454545;
   --border-color: #b7b7b7;
+  --border-color-light: rgba(183, 183, 183, 0.3);
   --dark-color: #181818;
   --l-bg-color: #f0f0f0;
   --star-color: #f9b811;
   font-size: 16px;
   --theme-font: "travel";
-  --container-size: 1200px;
+  --container-size: 1300px;
 }
 
 body {
@@ -37,7 +39,9 @@ h6 {
 .h1 {
   font-size: 4.5rem;
 }
-
+p {
+  line-height: 1.688rem;
+}
 a {
   text-decoration: none;
   color: inherit;
