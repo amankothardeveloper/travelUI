@@ -37,7 +37,6 @@ header {
 
 // Hero Section Style Starts -------------------------
 section.hero-sec {
-  padding: 3.75rem 0;
   .search-container {
     border: 1px solid var(--border-color-light);
     padding: 0.75rem 1rem;
@@ -281,3 +280,21 @@ section.hero-sec {
   }
 }
 // Hero Section Style Ends ---------------------------
+
+// Our Partner Section Starts ------------------------
+section.our-partner {
+  .h2 {
+    color: var(--l-heading);
+    font-size: 1.5rem;
+  }
+  ul.partner-list {
+    column-gap: 2rem;
+    li{
+      img{
+        height: 2rem;
+        width: auto;
+      }
+    }
+  }
+}
+// Our Partner Section Ends --------------------------

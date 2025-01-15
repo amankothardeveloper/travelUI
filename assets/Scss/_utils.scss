@@ -51,6 +51,11 @@ $align-options: start, center, flex-end;
 }
 
 // padding and margins ----------------
+.p-sec {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
 $spaces: 1, 2;
 
 @each $space in $spaces {

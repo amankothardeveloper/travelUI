@@ -11,7 +11,7 @@
 :root {
   --theme-color: #35aff4;
   --text-color: #909090;
-  --l-grey: #ccc;
+  --l-heading: #9e9e9e;
   --white: #fff;
   --shadow-color: #324b682b;
   --text-color-alt: #454545;
@@ -23,6 +23,7 @@
   font-size: 16px;
   --theme-font: "travel";
   --container-size: 1300px;
+  --section-space: 3.75rem;
 }
 
 body {
@@ -149,6 +150,11 @@ svg {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.p-sec {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
 }
 
 .pl-1 {
@@ -340,9 +346,6 @@ header .auth-container {
        column-gap: 1rem;
 }
 
-section.hero-sec {
-  padding: 3.75rem 0;
-}
 section.hero-sec .search-container {
   border: 1px solid var(--border-color-light);
   padding: 0.75rem 1rem;
@@ -574,4 +577,17 @@ section.hero-sec .social-info-container ul.social-links li a {
 section.hero-sec .social-info-container ul.social-links li a:hover {
   background: var(--theme-color);
   fill: var(--white);
+}
+
+section.our-partner .h2 {
+  color: var(--l-heading);
+  font-size: 1.5rem;
+}
+section.our-partner ul.partner-list {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+section.our-partner ul.partner-list li img {
+  height: 2rem;
+  width: auto;
 }/*# sourceMappingURL=main.css.map */
