@@ -10,29 +10,148 @@
     <!-- Header Starts ----------------------- -->
     <header id="site_header" class="py-1">
       <div class="site-container">
-        <div class="flex w-100 justify-space-between">
-          <div class="brand">
-            <a href="index.html">
-              <img src="./assets/Images/svg/Logo.svg" alt="Travel Agent" />
-            </a>
-          </div>
+        <div class="flex w-100 justify-space-between align-center">
+          <a href="index.html" class="brand flex">
+            <svg class="theme-fill">
+              <use xlink:href="./assets/Images/svg/SVG-Database.svg#logo"></use>
+            </svg>
+          </a>
           <nav>
-            <ul class="flex list-null">
+            <ul class="flex list-null main-menu">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Packages</a></li>
+              <li class="has-sub-menu"><a href="#">Packages</a></li>
               <li><a href="#">Faqs</a></li>
               <li><a href="#">Community</a></li>
             </ul>
           </nav>
-          <div class="auth-container">
-            <a href="#" class="theme-btn-alt">Login</a>
-            <a href="#" class="theme-btn">Sign Up</a>
+          <div class="auth-container flex">
+            <a href="#" class="btn theme-btn-alt">Login</a>
+            <a href="#" class="btn theme-btn-dark">Sign Up</a>
           </div>
         </div>
       </div>
     </header>
     <!-- Header Ends ------------------------- -->
+
+    <!-- Hero Sections Starts -------------------------------- -->
+    <section class="hero-sec">
+      <div class="site-container">
+        <div class="flex">
+          <div class="content-sec w-50 pt-1">
+            <h1 class="h1 mb-2">Discover your favorite place with us</h1>
+            <p class="mb-2">
+              Your journey begins here with our curated travel experiences.
+              Discover new horizons, create lasting memories, and explore the
+              world with our expertly crafted itineraries.
+            </p>
+            <div class="search-container flex justify-space-between">
+              <div class="flex">
+                <div class="location-cont">
+                  <label for="location" class="flex theme-fill">
+                    <svg>
+                      <use
+                        xlink:href="./assets/Images/svg/SVG-Database.svg#map"
+                      ></use>
+                    </svg>
+                    <div class="input-form flex flex-column">
+                      <span class="label">Locations</span>
+                      <input type="text" name="location" id="location" />
+                    </div>
+                  </label>
+                </div>
+                <div class="date-n-time-cont">
+                  <label for="data-n-time" class="flex theme-fill">
+                    <svg>
+                      <use
+                        xlink:href="./assets/Images/svg/SVG-Database.svg#calendar"
+                      ></use>
+                    </svg>
+                    <div class="input-form flex flex-column">
+                      <span class="label">Date and time</span>
+                      <input
+                        type="datetime-local"
+                        name="dataTime"
+                        id="dataTime"
+                      />
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn theme-btn">
+                <svg>
+                  <use
+                    xlink:href="./assets/Images/svg/SVG-Database.svg#search"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <div class="social-info-container">
+              <h4 class="lable">Follow Us</h4>
+              <ul class="social-links">
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        xlink:href="./assets/Images/svg/SVG-Database.svg#facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        xlink:href="./assets/Images/svg/SVG-Database.svg#instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg>
+                      <use
+                        xlink:href="./assets/Images/svg/SVG-Database.svg#twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="image-sec w-50">
+            <div
+              class="featured-image-container position-relative flex align-center justify-center"
+            >
+              <div class="topLeft-clip"></div>
+              <div
+                class="img-cont flex justify-center align-center overflow-hidden"
+              >
+                <img
+                  src="./assets/Images/jpeg/hero-image.jpg"
+                  alt="Hero Image"
+                  class="w-100 h-100 object-cover"
+                />
+              </div>
+              <div class="rightBottom-clip"></div>
+              <div class="rating-demo flex position-absolute">
+                <div
+                  class="thumb-cont flex align-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="./assets/Images/jpeg/Rating-Demo.jpg"
+                    alt="Rating Demo"
+                    class="w-100 h-100 object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Sections Ends --------------------------------- -->
     <script src="./assets/Scripts/script.js"></script>
   </body>
 </html>
