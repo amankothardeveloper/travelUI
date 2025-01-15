@@ -6,12 +6,14 @@
 :root {
   --theme-color: #35aff4;
   --text-color: #909090;
+  --white: #fff;
+  --shadow-color:#324B682B;
   --text-color-alt: #454545;
   --border-color: #b7b7b7;
   --dark-color: #181818;
   --l-bg-color: #f0f0f0;
   --star-color: #f9b811;
-  font-size: 18px;
+  font-size: 16px;
   --theme-font: "travel";
   --container-size: 1200px;
 }
@@ -31,10 +33,38 @@ h6 {
   color: var(--dark-color);
   font-weight: bold;
 }
-a{
+
+.h1 {
+  font-size: 4.5rem;
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }
-.btn{
-  
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  display: flex;
+  border-radius: 0.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  font-weight: lighter;
+  &.theme-btn-alt {
+    color: var(--text-color-alt);
+    border: 1px solid var(--border-color);
+  }
+  &.theme-btn {
+  }
+  &.theme-btn-dark {
+    color: var(--white);
+    background: var(--dark-color);
+  }
 }
