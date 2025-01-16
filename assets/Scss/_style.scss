@@ -611,6 +611,7 @@ section.our-service {
 // Our Services Section Ends -----------------------------
 // Testimonials Section Starts -------------------------
 section.testimonials {
+  padding-bottom: 0;
   .site-container {
     max-height: 100vh;
     overflow: hidden;
@@ -653,7 +654,7 @@ section.testimonials {
           font-size: 1rem;
           font-weight: normal;
           color: var(--text-color);
-      }
+        }
       }
       .review {
         font-weight: normal;
@@ -671,3 +672,60 @@ section.testimonials {
   }
 }
 // Testimonials Section Ends ---------------------------
+// Newsletter Section Starts --------------------------
+section.newsletter {
+  background: var(--theme-color);
+  .h2 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+  }
+  .h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+  .newsletter-form {
+    flex: 1;
+    .input-container {
+      flex: 1;
+      padding-left: 7%;
+      svg {
+        fill: var(--theme-color);
+        transform: translate(2.25rem, -0.05rem);
+        pointer-events: none;
+      }
+      input {
+        padding: 0.75rem 0.75rem 0.75rem 3rem;
+        border-radius: 0.5rem;
+        outline: none !important;
+        border: none;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        flex: 1;
+      }
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  .heading-container {
+    padding-left: 11%;
+    padding-right: 4remrem;
+  }
+  .icon {
+    position: absolute;
+    left: calc((100% - var(--container-size)) / 2);
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+    top: 50%;
+    transform: translate(-35%, -50%);
+    pointer-events: none;
+    svg {
+      fill: var(--white);
+      opacity: 80%;
+    }
+  }
+}
+
+// Newsletter Section Ends ----------------------------

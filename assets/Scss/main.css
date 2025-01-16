@@ -6,9 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--theme-font);
 }
 
-:root {
+:root, .neg-theme {
   --theme-color: #35aff4;
   --text-color: #909090;
   --l-heading: #9e9e9e;
@@ -95,6 +96,8 @@ svg {
   width: -moz-max-content;
   width: max-content;
   font-weight: lighter;
+  cursor: pointer;
+  font-size: 1rem;
 }
 .btn.theme-btn-alt {
   color: var(--text-color-alt);
@@ -110,6 +113,7 @@ svg {
 .btn.theme-btn-dark {
   color: var(--white);
   background: var(--dark-color);
+  border: none;
 }
 
 .site-container {
@@ -301,6 +305,10 @@ svg {
 
 .theme-fill {
   fill: var(--theme-color);
+}
+
+.text-white {
+  color: var(--white);
 }
 
 .w-25 {
@@ -917,6 +925,9 @@ section.our-service .content-container .h2 {
   font-weight: normal;
 }
 
+section.testimonials {
+  padding-bottom: 0;
+}
 section.testimonials .site-container {
   max-height: 100vh;
   overflow: hidden;
@@ -972,4 +983,59 @@ section.testimonials .testimonials-container .testimonial-card .review:after, se
 
 .dark .testimonial-card {
   box-shadow: 0rem 0.25rem 0.625rem 0 #000 !important;
+}
+
+section.newsletter {
+  background: var(--theme-color);
+}
+section.newsletter .h2 {
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+section.newsletter .h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+section.newsletter .newsletter-form {
+  flex: 1;
+}
+section.newsletter .newsletter-form .input-container {
+  flex: 1;
+  padding-left: 7%;
+}
+section.newsletter .newsletter-form .input-container svg {
+  fill: var(--theme-color);
+  transform: translate(2.25rem, -0.05rem);
+  pointer-events: none;
+}
+section.newsletter .newsletter-form .input-container input {
+  padding: 0.75rem 0.75rem 0.75rem 3rem;
+  border-radius: 0.5rem;
+  outline: none !important;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  flex: 1;
+}
+section.newsletter .newsletter-form button {
+  padding: 0.75rem 1.5rem;
+}
+section.newsletter .heading-container {
+  padding-left: 11%;
+  padding-right: 4remrem;
+}
+section.newsletter .icon {
+  position: absolute;
+  left: calc((100% - var(--container-size)) / 2);
+  width: 15%;
+  height: 100%;
+  overflow: hidden;
+  top: 50%;
+  transform: translate(-35%, -50%);
+  pointer-events: none;
+}
+section.newsletter .icon svg {
+  fill: var(--white);
+  opacity: 80%;
 }/*# sourceMappingURL=main.css.map */

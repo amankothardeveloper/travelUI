@@ -7,7 +7,6 @@ $(".dest-card-slider").slick({
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
 });
-
 window.addEventListener("DOMContentLoaded", () => {
   let themeMode = localStorage.getItem("theme-mode");
 
@@ -25,5 +24,12 @@ window.addEventListener("DOMContentLoaded", () => {
       $(".themer,.mode-switcher").addClass("dark");
       localStorage.setItem("theme-mode", "dark");
     }
+  });
+
+  $(".newsletter-form").submit((e) => {
+    e.preventDefault();
+    alert(
+      `Updates will notified you on ${e.currentTarget[0].value}`
+    );
   });
 });

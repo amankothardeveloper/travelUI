@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--theme-font);
 }
-:root {
+:root, .neg-theme {
   --theme-color: #35aff4;
   --text-color: #909090;
   --l-heading: #9e9e9e;
@@ -84,6 +85,8 @@ svg {
   align-items: center;
   width: max-content;
   font-weight: lighter;
+  cursor: pointer;
+  font-size: 1rem;
   &.theme-btn-alt {
     color: var(--text-color-alt);
     border: 1px solid var(--border-color);
@@ -98,5 +101,6 @@ svg {
   &.theme-btn-dark {
     color: var(--white);
     background: var(--dark-color);
+    border: none;
   }
 }
