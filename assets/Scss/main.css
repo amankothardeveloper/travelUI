@@ -99,6 +99,13 @@ svg {
   color: var(--text-color-alt);
   border: 1px solid var(--border-color);
 }
+.btn.theme-btn {
+  background: var(--theme-color);
+  color: var(--white);
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: normal;
+}
 .btn.theme-btn-dark {
   color: var(--white);
   background: var(--dark-color);
@@ -830,4 +837,75 @@ section.journeys .featured-container .satisfied-customer ul.customers-list li pi
   height: 3rem;
   border-radius: 3rem;
   border: 0.188rem solid var(--white);
+}
+
+section.our-service .site-container > .flex {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+section.our-service .site-container > .flex > .w-50 {
+  flex: 1;
+}
+section.our-service .featured-container picture {
+  aspect-ratio: 1/1;
+  border-radius: 1.375rem;
+}
+section.our-service .featured-container .rating-demo {
+  background: var(--white);
+  padding: 0.65rem;
+  border-radius: 1rem;
+  top: 10%;
+  right: 0;
+  box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+  transform: translateX(3rem);
+}
+section.our-service .featured-container .rating-demo .thumb-cont {
+  width: 3.625rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.5rem;
+}
+section.our-service .featured-container .rating-demo h5 {
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.8rem;
+}
+section.our-service .featured-container .rating-demo p {
+  font-size: 0.9rem;
+}
+section.our-service .featured-container .rating-demo .rate {
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+}
+section.our-service .featured-container .rating-demo .rate svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--star-color);
+}
+section.our-service .featured-container .customer-profile {
+  background: var(--white);
+  padding: 0.65rem;
+  border-radius: 10rem;
+  bottom: 21%;
+  left: 0;
+  box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+  transform: translateX(-2.5rem);
+}
+section.our-service .featured-container .customer-profile .thumb-cont {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 10rem;
+}
+section.our-service .featured-container .customer-profile h5 {
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.688rem;
+  font-size: 1.125rem;
+}
+section.our-service .featured-container .customer-profile p {
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+}
+section.our-service .content-container .h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
 }/*# sourceMappingURL=main.css.map */

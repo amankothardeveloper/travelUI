@@ -499,7 +499,6 @@ section.journeys {
         filter: blur(0);
         transition: 0.5s;
       }
-      
     }
     .satisfied-customer {
       position: absolute;
@@ -528,3 +527,81 @@ section.journeys {
   }
 }
 // Journeys Section Ends -------------------------
+// Our Services Section Starts ---------------------------
+section.our-service {
+  .site-container {
+    & > .flex {
+      column-gap: 5rem;
+      & > .w-50 {
+        flex: 1;
+      }
+    }
+  }
+  .featured-container {
+    picture {
+      aspect-ratio: 1/1;
+      border-radius: 1.375rem;
+    }
+    .rating-demo {
+      background: var(--white);
+      padding: 0.65rem;
+      border-radius: 1rem;
+      top: 10%;
+      right: 0;
+      box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+      transform: translateX(3rem);
+      .thumb-cont {
+        width: 3.625rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 0.5rem;
+      }
+      h5 {
+        font-size: inherit;
+        font-weight: normal;
+        line-height: 1.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .rate {
+        column-gap: 0.2rem;
+        svg {
+          width: 1rem;
+          height: 1rem;
+          fill: var(--star-color);
+        }
+      }
+    }
+    .customer-profile {
+      background: var(--white);
+      padding: 0.65rem;
+      border-radius: 10rem;
+      bottom: 21%;
+      left: 0;
+      box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+      transform: translateX(-2.5rem);
+      .thumb-cont {
+        width: 3rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 10rem;
+      }
+      h5 {
+        font-size: inherit;
+        font-weight: normal;
+        line-height: 1.688rem;
+        font-size: 1.125rem;
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+      }
+    }
+  }
+  .content-container {
+    .h2 {
+      font-size: 2.5rem;
+      font-weight: normal;
+    }
+  }
+}
+// Our Services Section Ends -----------------------------
