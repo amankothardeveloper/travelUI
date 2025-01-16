@@ -17,6 +17,14 @@ header {
         display: flex;
         align-items: stretch;
         & > a {
+          &:hover {
+            color: var(--theme-color);
+          }
+        }
+        &.active {
+          a {
+            color: var(--theme-color);
+          }
         }
         &.has-sub-menu {
           &:after {
@@ -35,6 +43,21 @@ header {
   }
   .auth-container {
     column-gap: 1rem;
+    .theme-color-changer {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 7rem;
+      cursor: pointer;
+      border: 0.15rem solid var(--white);
+      box-shadow: 0rem 0rem 0.8rem 0rem #0007782e;
+      input[type="color" i] {
+        border-radius: 50%;
+        inline-size: 2.5rem;
+        block-size: 2.5rem;
+        border-color: transparent;
+      }
+    }
+
     .mode-switcher,
     svg {
       height: 2rem;
@@ -50,6 +73,11 @@ header {
         &:first-child {
           margin-top: -2.35rem;
           transition: 0.5s;
+        }
+      }
+      &:hover {
+        svg {
+          fill: var(--theme-color);
         }
       }
     }
@@ -69,6 +97,16 @@ header {
 
 // Hero Section Style Starts -------------------------
 section.hero-sec {
+  .h1 {
+    svg {
+      fill: var(--theme-color);
+      width: 50%;
+      position: relative;
+      z-index: -1;
+      margin-top: -2rem;
+      height: 2rem;
+    }
+  }
   .search-container {
     border: 1px solid var(--border-color-light);
     padding: 0.75rem 1rem;
@@ -94,6 +132,7 @@ section.hero-sec {
       font-size: 0.9rem;
       font-family: inherit;
       background: transparent;
+      color: var(--text-color);
       &:focus-visible {
         background: var(--l-bg-color);
         outline: none;
@@ -229,8 +268,8 @@ section.hero-sec {
         animation: rotate 30s infinite linear;
         transition: 0.5s;
         .st0 {
-          font-size: 2rem;
-          letter-spacing: 2.2rem;
+          font-size: 32px;
+          letter-spacing: 36px;
           transition: 0.5s;
           fill: var(--dark-color);
         }
@@ -310,6 +349,11 @@ section.hero-sec {
         }
       }
     }
+  }
+}
+.dark {
+  input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
   }
 }
 // Hero Section Style Ends ---------------------------
@@ -706,6 +750,9 @@ section.newsletter {
     }
     button {
       padding: 0.75rem 1.5rem;
+      &:hover {
+        background: var(--dark-color);
+      }
     }
   }
   .heading-container {
@@ -714,7 +761,7 @@ section.newsletter {
   }
   .icon {
     position: absolute;
-    left: calc((100% - var(--container-size)) / 2);
+    // left: calc((100% - var(--container-size)) / 2);
     width: 15%;
     height: 100%;
     overflow: hidden;
@@ -729,3 +776,103 @@ section.newsletter {
 }
 
 // Newsletter Section Ends ----------------------------
+
+// Footer Starts ----------------------------------------
+footer {
+  background: var(--dark-color);
+  padding: 5rem 0;
+  .widget {
+    padding: 0 1rem;
+    min-width: 15%;
+    &.about {
+      flex: 1;
+      p {
+        max-width: 17rem;
+        font-weight: normal;
+        font-size: 1rem;
+      }
+    }
+    a.brand.flex {
+      svg {
+        height: 1.5rem;
+        width: 7.62rem;
+      }
+    }
+  }
+  .menu-cont {
+    .widget:not(:last-child) {
+      min-width: 40%;
+    }
+    .h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    ul.footer-menu {
+      li {
+        a {
+          line-height: 2.5rem;
+          transition: 0.3s;
+          display: flex;
+          font-size: 1rem;
+          &:hover {
+            color: var(--theme-color);
+            transform: translateX(0.3rem);
+          }
+        }
+      }
+      &.social {
+        a {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          svg {
+            fill: var(--white);
+            margin-right: 0.2rem;
+            min-width: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3rem;
+            filter: drop-shadow(0px 0px 0rem var(--theme-color))
+              drop-shadow(0px 0px 0rem var(--theme-color))
+              drop-shadow(0px 0px 0rem var(--theme-color));
+          }
+          &:hover {
+            svg {
+              filter: drop-shadow(0px 0px 0.1rem var(--theme-color))
+                drop-shadow(0px 0px 1rem var(--theme-color))
+                drop-shadow(0px 0px 2rem var(--theme-color));
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyrights {
+    margin-top: 5rem;
+    border-top: 1px solid var(--white);
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    a {
+      &:hover {
+        color: var(--theme-color);
+      }
+    }
+    ul {
+      column-gap: 2rem;
+      a {
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        transition: 0.3s;
+        display: flex;
+        &:hover {
+          color: var(--theme-color);
+          transform: translateY(-0.2rem);
+        }
+      }
+    }
+  }
+}
+// Footer Ends ------------------------------------------

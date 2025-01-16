@@ -19,7 +19,7 @@
           </a>
           <nav>
             <ul class="flex list-null main-menu">
-              <li><a href="#">Home</a></li>
+              <li class="active"><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li class="has-sub-menu"><a href="#">Packages</a></li>
               <li><a href="#">Faqs</a></li>
@@ -27,6 +27,16 @@
             </ul>
           </nav>
           <div class="auth-container flex align-center">
+            <div
+              class="theme-color-changer flex justify-center align-center overflow-hidden position-relative"
+            >
+              <input
+                type="color"
+                id="theme-color"
+                value="#35aff4"
+                class="position-absolute"
+              />
+            </div>
             <div
               class="mode-switcher flex align-center flex-column overflow-hidden"
             >
@@ -61,7 +71,11 @@
             class="content-sec w-50 pt-1 flex flex-column justify-space-between"
           >
             <div>
-              <h1 class="h1 mb-2">Discover your favorite place with us</h1>
+              <h1 class="h1 mb-2 flex flex-column">Discover your favorite place with us
+                <svg>
+                  <use xlink:href="./assets/images/svg/SVG-Database.svg#sketch-lines"></use>
+                </svg>
+              </h1>
               <p class="mb-2">
                 Your journey begins here with our curated travel experiences.
                 Discover new horizons, create lasting memories, and explore the
@@ -158,7 +172,7 @@
             >
               <div class="topLeft-clip"></div>
               <div
-                class="img-cont flex justify-center align-center overflow-hidden"
+                class="img-cont flex justify-center align-center overflow-hidden w-100"
               >
                 <img
                   src="./assets/Images/jpeg/hero-image.jpg"
@@ -232,20 +246,20 @@
           <h2 class="h2">Our Travel Partner</h2>
           <ul class="partner-list flex list-null align-center">
             <li>
-              <img src="./assets/Images/png/Traveloka.png" alt="Traveloka" />
+              <img src="./assets/Images/svg/Traveloka.svg" alt="Traveloka" />
             </li>
             <li>
-              <img src="./assets/Images/png/airbnb.png" alt="Airbnb" />
+              <img src="./assets/Images/svg/airbnb.svg" alt="Airbnb" />
             </li>
             <li>
-              <img src="./assets/Images/png/Expedia.png" alt="Expedia" />
+              <img src="./assets/Images/svg/Expedia.svg" alt="Expedia" />
             </li>
             <li>
-              <img src="./assets/Images/png/Skyscanner.png" alt="Skyscanner" />
+              <img src="./assets/Images/svg/Skyscanner.svg" alt="Skyscanner" />
             </li>
             <li>
               <img
-                src="./assets/Images/png/AmericanAirlines.png"
+                src="./assets/Images/svg/AmericanAirlines.svg"
                 alt="AmericanAirlines"
               />
             </li>
@@ -2176,6 +2190,94 @@
       </div>
     </section>
     <!-- Newsletter Section Ends -------------------------------- -->
+    <!-- Footer Starts ------------------------------------------ -->
+    <footer class="neg-theme">
+      <div class="site-container">
+        <div class="flex flex-wrap">
+          <div class="widget about">
+            <a href="index.html" class="brand flex mb-2">
+              <svg class="theme-fill">
+                <use
+                  xlink:href="./assets/Images/svg/SVG-Database.svg#logo"
+                ></use>
+              </svg>
+            </a>
+            <p class="text-white">
+              Wanderlust meets wander well – Experience seamless travel with our
+              services.
+            </p>
+          </div>
+          <div class="w-50 flex menu-cont justify-flex-end">
+            <div class="widget">
+              <h3 class="h3 text-white mb-2">Company</h3>
+              <ul class="footer-menu list-null">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Community</a></li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h3 class="h3 text-white mb-2">Help</h3>
+              <ul class="footer-menu list-null">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Refund Policy</a></li>
+              </ul>
+            </div>
+            <div class="widget">
+              <h3 class="h3 text-white mb-2">Follow Us</h3>
+              <ul class="footer-menu list-null social flex flex-column align-flex-start">
+                <li>
+                  <a href="#"
+                    ><svg>
+                      <use
+                        xlink:href="./assets/images/svg/SVG-Database.svg#facebook"
+                      ></use>
+                    </svg>
+                    Fcebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg>
+                      <use
+                        xlink:href="./assets/images/svg/SVG-Database.svg#instagram"
+                      ></use>
+                    </svg>
+                    Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg>
+                      <use
+                        xlink:href="./assets/images/svg/SVG-Database.svg#twitter"
+                      ></use>
+                    </svg>
+                    Twitter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-space-between copyrights">
+          <div class="w-50">
+            2023 <a href="#">Logoipsum</a>. All right reserved.
+          </div>
+          <div class="w-50 flex justify-flex-end">
+            <ul class="terms-menu list-null flex">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookies Settings</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends ------------------------------------------ -->
     <script src="./assets/lib/jquery/jquery.slim.min.js"></script>
     <script src="./assets/lib/Slick/slick.js"></script>
     <script src="./assets/Scripts/script.js"></script>

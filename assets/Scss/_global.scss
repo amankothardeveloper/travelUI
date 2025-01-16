@@ -4,7 +4,8 @@
   box-sizing: border-box;
   font-family: var(--theme-font);
 }
-:root, .neg-theme {
+:root,
+.neg-theme {
   --theme-color: #35aff4;
   --text-color: #909090;
   --l-heading: #9e9e9e;
@@ -74,7 +75,15 @@ svg {
   width: 1.5rem;
   height: 1.5rem;
 }
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
 
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
 .btn {
   padding: 0.5rem 1.25rem;
   display: flex;
@@ -87,9 +96,15 @@ svg {
   font-weight: lighter;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.5s;
   &.theme-btn-alt {
     color: var(--text-color-alt);
     border: 1px solid var(--border-color);
+    &:hover {
+      background: var(--theme-color);
+      color: var(--white);
+      border-color: var(--theme-color);
+    }
   }
   &.theme-btn {
     background: var(--theme-color);
@@ -97,10 +112,18 @@ svg {
     line-height: 1.5rem;
     padding: 0.75rem 1.5rem;
     font-weight: normal;
+    &:hover {
+      background: var(--dark-color);
+    }
   }
   &.theme-btn-dark {
     color: var(--white);
     background: var(--dark-color);
     border: none;
+    &:hover {
+      background: var(--theme-color);
+      color: var(--white);
+      border-color: var(--theme-color);
+    }
   }
 }

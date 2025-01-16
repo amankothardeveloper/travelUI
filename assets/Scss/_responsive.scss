@@ -1,0 +1,10 @@
+@media screen and (min-width: 1400px) {
+  :root,
+  html.dark {
+    font-size: 1vw;
+    --container-size: 80%;
+  }
+  .site-container {
+    max-width: 80%;
+  }
+}
