@@ -1,4 +1,4 @@
-// header Styles Starts --------------------------------
+// header Styles Starts ------------------------------
 header {
   .brand {
     svg {
@@ -74,7 +74,7 @@ section.hero-sec {
         color: var(--text-color);
         font-family: inherit;
         &::-webkit-calendar-picker-indicator {
-          display: none;
+          // display: none;
         }
       }
     }
@@ -290,8 +290,8 @@ section.our-partner {
   }
   ul.partner-list {
     column-gap: 2rem;
-    li{
-      img{
+    li {
+      img {
         height: 2rem;
         width: auto;
       }
@@ -299,3 +299,107 @@ section.our-partner {
   }
 }
 // Our Partner Section Ends --------------------------
+// Popular destinations Section Starts --------------
+section.popular-destinations {
+  .h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+  }
+  .prev,
+  .next {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 0.8rem;
+
+    border: 1px solid;
+    cursor: pointer;
+    background: var(--theme-color);
+    fill: var(--white);
+    border-color: var(--theme-color);
+    &.slick-disabled {
+      background: none;
+      fill: var(--text-color);
+      border-color: var(--text-color);
+    }
+  }
+
+  .site-container.left-side {
+    max-width: unset;
+    margin-left: calc(calc(100% - var(--container-size)) / 2);
+  }
+  .dest-card-slider {
+    .slick-track {
+      display: flex;
+      column-gap: 2rem;
+      padding: 2rem 0;
+    }
+  }
+  .dest-card {
+    transition: 1s;
+    transform: translateY(0);
+    picture {
+      width: 22rem;
+      aspect-ratio: 1/1;
+      border-radius: 0.75rem;
+      img {
+        transform: scale(1);
+        transition: 1s;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 150%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: var(--theme-color);
+        mix-blend-mode: color;
+        transition: 0.3s;
+      }
+    }
+    .meta-data {
+      h5 {
+        font-weight: normal;
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+      }
+      .rate {
+        column-gap: 0.2rem;
+        svg {
+          width: 1rem;
+          height: 1rem;
+          fill: var(--star-color);
+        }
+      }
+    }
+    a {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    &:hover {
+      transform: translateY(-1rem);
+      picture {
+        img {
+          transform: scale(1.1);
+        }
+        &:after {
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+// Popular destinations Section Ends ----------------

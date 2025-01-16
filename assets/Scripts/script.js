@@ -1,8 +1,9 @@
 $(".dest-card-slider").slick({
-  dots: true,
-  infinite: true,
+  infinite: false,
   speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
+  slidesToShow: 4,
   variableWidth: true,
+  loop: false,
+  prevArrow: $(".prev"),
+  nextArrow: $(".next"),
 });

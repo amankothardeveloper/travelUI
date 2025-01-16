@@ -49,7 +49,9 @@
                 Discover new horizons, create lasting memories, and explore the
                 world with our expertly crafted itineraries.
               </p>
-              <div class="search-container flex justify-space-between">
+              <div
+                class="search-container flex justify-space-between align-center"
+              >
                 <div class="flex">
                   <div class="location-cont mr-1 position-relative">
                     <label for="location" class="flex theme-fill">
@@ -149,7 +151,7 @@
               <div class="rightBottom-clip"></div>
               <div class="rating-demo flex position-absolute align-center">
                 <div
-                  class="thumb-cont flex align-center justify-center overflow-hidden"
+                  class="thumb-cont flex align-center justify-center overflow-hidden position-relative"
                 >
                   <img
                     src="./assets/Images/jpeg/Rating-Demo.jpg"
@@ -193,7 +195,7 @@
                     </textPath>
                   </text>
                 </svg>
-                <a href="#slider" class="scroll-link position-absolute"></a>
+                <a href="#popular-destinations" class="scroll-link position-absolute"></a>
               </div>
             </div>
           </div>
@@ -233,189 +235,250 @@
     <!-- Our Partner Section Ends --------------------------->
 
     <!-- Popular Destinations Section Starts---------------------------- -->
-    <section class="popular-destinations p-sec">
+    <section class="popular-destinations p-sec overflow-hidden" id="popular-destinations">
       <div class="site-container">
-        <div class="flex flex-wrap"></div>
+        <div class="flex flex-wrap align-center">
+          <div class="w-50">
+            <h2 class="h2">Popular Destinations</h2>
+            <p>See our popular destinations that our client choose</p>
+          </div>
+          <div class="w-50 flex justify-flex-end">
+            <button class="prev mr-1">
+              <svg>
+                <use
+                  xlink:href="./assets/images/svg/SVG-Database.svg#arrow-left"
+                ></use>
+              </svg>
+            </button>
+            <button class="next">
+              <svg>
+                <use
+                  xlink:href="./assets/images/svg/SVG-Database.svg#arrow-right"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="site-container w-100 left-side">
         <div class="flex flex-wrap">
           <div class="w-100 position-relative">
             <div class="dest-card-slider">
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide1.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide1.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
+                <a href="#"></a>
               </div>
 
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide2.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide2.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
+                <a href="#"></a>
               </div>
 
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide3.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide3.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
+                <a href="#"></a>
               </div>
 
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide4.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide4.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
+                <a href="#"></a>
               </div>
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide1.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide1.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
-              </div>
-
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide2.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
-                  </div>
-                </div>
+                <a href="#"></a>
               </div>
 
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide3.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide2.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
+                <a href="#"></a>
               </div>
 
-              <div>
-                <div class="dest-card">
-                  <picture>
-                    <img src="./assets/Images/jpeg/slide4.jpg" alt="slide 1" />
-                  </picture>
-                  <div class="meta-data flex flex-column">
-                    <div class="flex w-100 justify-space-between">
-                      <h5 class="mr-2">Coco De Heaven</h5>
-                      <span class="rate flex align-center">
-                        <svg>
-                          <use
-                            xlink:href="./assets/Images/svg/SVG-Database.svg#star"
-                          ></use>
-                        </svg>
-                        (4.5)
-                      </span>
-                    </div>
-                    <p>Starts from <span class="theme-color">$</span>400</p>
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide3.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
                   </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
                 </div>
+                <a href="#"></a>
+              </div>
+
+              <div class="dest-card">
+                <picture
+                  class="flex align-center justify-center overflow-hidden position-relative"
+                >
+                  <img
+                    src="./assets/Images/jpeg/slide4.jpg"
+                    alt="slide 1"
+                    class="w-100 h-100 object-cover"
+                  />
+                </picture>
+                <div class="meta-data flex flex-column mt-1">
+                  <div class="flex w-100 justify-space-between">
+                    <h5 class="mr-2">Coco De Heaven</h5>
+                    <span class="rate flex align-center">
+                      <svg>
+                        <use
+                          xlink:href="./assets/Images/svg/SVG-Database.svg#star"
+                        ></use>
+                      </svg>
+                      (4.5)
+                    </span>
+                  </div>
+                  <p>Starts from <span class="theme-color">$</span>400</p>
+                </div>
+                <a href="#"></a>
               </div>
             </div>
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
           </div>
         </div>
       </div>
