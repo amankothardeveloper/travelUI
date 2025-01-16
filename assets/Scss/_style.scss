@@ -1,5 +1,9 @@
 // header Styles Starts ------------------------------
 header {
+  top: 0;
+  z-index: 9;
+  background: var(--trans-bg);
+  backdrop-filter: blur(0.5rem) contrast(2);
   .brand {
     svg {
       height: 1.5rem;
@@ -60,6 +64,7 @@ header {
     }
   }
 }
+
 // header Styles Ends --------------------------------
 
 // Hero Section Style Starts -------------------------
@@ -639,6 +644,16 @@ section.testimonials {
           height: 3.5rem;
           border-radius: 50%;
         }
+        h5.name {
+          font-size: 1rem;
+          font-weight: bold;
+          margin-bottom: 0.2rem;
+        }
+        h6.designation {
+          font-size: 1rem;
+          font-weight: normal;
+          color: var(--text-color);
+      }
       }
       .review {
         font-weight: normal;
