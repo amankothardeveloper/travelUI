@@ -586,7 +586,6 @@ section.our-service {
         border-radius: 10rem;
       }
       h5 {
-        font-size: inherit;
         font-weight: normal;
         line-height: 1.688rem;
         font-size: 1.125rem;
@@ -605,3 +604,55 @@ section.our-service {
   }
 }
 // Our Services Section Ends -----------------------------
+// Testimonials Section Starts -------------------------
+section.testimonials {
+  .site-container {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  .testimonials-container {
+    column-count: 3;
+    gap: 2rem;
+    .testimonial-card {
+      column-count: 1;
+      padding: 2rem;
+      box-shadow: 0rem 0.25rem 0.625rem 0 #171c1f3b;
+      margin-bottom: 2rem;
+      break-inside: avoid;
+      border-radius: 0.5rem;
+      .rating {
+        column-gap: 0.25rem;
+        svg {
+          width: 1.25rem;
+          height: 1.25rem;
+          fill: var(--star-color);
+        }
+        &[rating="4"] {
+          svg:last-child {
+            fill: var(--border-color);
+          }
+        }
+      }
+      .profile {
+        picture {
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+        }
+      }
+      .review {
+        font-weight: normal;
+        &:after,
+        &:before {
+          content: '"';
+        }
+      }
+    }
+  }
+}
+.dark {
+  .testimonial-card {
+    box-shadow: 0rem 0.25rem 0.625rem 0 #000 !important;
+  }
+}
+// Testimonials Section Ends ---------------------------
