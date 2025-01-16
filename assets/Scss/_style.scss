@@ -42,17 +42,17 @@ header {
         padding: 0.4rem;
         fill: var(--dark-color);
       }
-      span{
-        &:first-child{
+      span {
+        &:first-child {
           margin-top: -2.35rem;
           transition: 0.5s;
         }
       }
     }
-    .dark{
+    .dark {
       &.mode-switcher {
-        span{
-          &:first-child{
+        span {
+          &:first-child {
             margin-top: 0rem;
           }
         }
@@ -430,3 +430,101 @@ section.popular-destinations {
   }
 }
 // Popular destinations Section Ends ----------------
+// Journeys Section Starts -----------------------
+section.journeys {
+  .content-container {
+    padding-right: 7.5rem;
+    .h2 {
+      font-size: 2.5rem;
+      font-weight: normal;
+    }
+    .pointers-list {
+      padding-left: calc(1.5rem + 0.5rem);
+      li {
+        &:nth-child(even) {
+          padding-right: 0;
+        }
+      }
+      h6 {
+        font-size: 1.125rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+        &:before {
+          content: attr(count);
+          background: var(--theme-color);
+          color: var(--white);
+          width: 1.5rem;
+          height: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10rem;
+          margin-right: 0.5rem;
+          margin-left: calc(-1.5rem - 0.5rem);
+          font-weight: normal;
+          font-size: 0.7rem;
+          margin-top: -0.2rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  .featured-container {
+    .journeys-gallery {
+      gap: 1.5rem;
+      picture {
+        border-radius: 1.125rem;
+        height: 16.5rem;
+        flex: 1;
+        &:first-child {
+          height: 20rem;
+          flex: unset;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        aspect-ratio: 1/1;
+        background: var(--theme-color);
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 10%;
+        filter: blur(0);
+        transition: 0.5s;
+      }
+      
+    }
+    .satisfied-customer {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      transform: translate(-4rem, 0%);
+      background: var(--white);
+      padding: 0.75rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+      ul.customers-list {
+        li {
+          margin-left: -1rem;
+          &:first-child {
+            margin-left: 0;
+          }
+          picture {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 3rem;
+            border: 0.188rem solid var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+// Journeys Section Ends -------------------------

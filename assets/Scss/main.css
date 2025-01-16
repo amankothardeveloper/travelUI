@@ -132,6 +132,10 @@ svg {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-flex-start {
   justify-content: flex-start;
 }
@@ -339,6 +343,21 @@ svg {
 
 .overflow-overlay {
   overflow: overlay;
+}
+
+.text-uppercase {
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+
+.text-lowercase {
+  -webkit-text-decoration: lowercase;
+          text-decoration: lowercase;
+}
+
+.text-capitalize {
+  -webkit-text-decoration: capitalize;
+          text-decoration: capitalize;
 }
 
 header .brand svg {
@@ -723,4 +742,92 @@ section.popular-destinations .dest-card:hover picture img {
 }
 section.popular-destinations .dest-card:hover picture:after {
   top: 50%;
+}
+
+section.journeys .content-container {
+  padding-right: 7.5rem;
+}
+section.journeys .content-container .h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+section.journeys .content-container .pointers-list {
+  padding-left: 2rem;
+}
+section.journeys .content-container .pointers-list li:nth-child(even) {
+  padding-right: 0;
+}
+section.journeys .content-container .pointers-list h6 {
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+section.journeys .content-container .pointers-list h6:before {
+  content: attr(count);
+  background: var(--theme-color);
+  color: var(--white);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  margin-right: 0.5rem;
+  margin-left: -2rem;
+  font-weight: normal;
+  font-size: 0.7rem;
+  margin-top: -0.2rem;
+}
+section.journeys .content-container .pointers-list p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+section.journeys .featured-container .journeys-gallery {
+  gap: 1.5rem;
+}
+section.journeys .featured-container .journeys-gallery picture {
+  border-radius: 1.125rem;
+  height: 16.5rem;
+  flex: 1;
+}
+section.journeys .featured-container .journeys-gallery picture:first-child {
+  height: 20rem;
+  flex: unset;
+}
+section.journeys .featured-container .journeys-gallery:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  aspect-ratio: 1/1;
+  background: var(--theme-color);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 10%;
+  filter: blur(0);
+  transition: 0.5s;
+}
+section.journeys .featured-container .satisfied-customer {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  transform: translate(-4rem, 0%);
+  background: var(--white);
+  padding: 0.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 2.125rem 0 var(--shadow-color);
+}
+section.journeys .featured-container .satisfied-customer ul.customers-list li {
+  margin-left: -1rem;
+}
+section.journeys .featured-container .satisfied-customer ul.customers-list li:first-child {
+  margin-left: 0;
+}
+section.journeys .featured-container .satisfied-customer ul.customers-list li picture {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  border: 0.188rem solid var(--white);
 }/*# sourceMappingURL=main.css.map */

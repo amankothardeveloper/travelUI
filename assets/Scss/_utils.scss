@@ -22,7 +22,9 @@ $positions: relative, absolute, static, sticky;
 .flex {
   display: flex;
 }
-
+.flex-wrap {
+  flex-wrap: wrap;
+}
 $justify-options: flex-start, center, flex-end, space-between;
 
 @each $value in $justify-options {
@@ -146,4 +148,11 @@ $sizes: 25, 50, 75, 100;
 }
 .overflow-overlay {
   overflow: overlay;
+}
+
+$text-type: uppercase, lowercase, capitalize;
+@each $value in $text-type {
+  .text-#{$value} {
+    text-decoration: #{$value};
+  }
 }
