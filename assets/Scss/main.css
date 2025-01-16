@@ -367,6 +367,23 @@ header .auth-container {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
+header .auth-container .mode-switcher,
+header .auth-container svg {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+header .auth-container .mode-switcher svg {
+  padding: 0.4rem;
+  fill: var(--dark-color);
+}
+header .auth-container .mode-switcher span:first-child {
+  margin-top: -2.35rem;
+  transition: 0.5s;
+}
+header .auth-container .dark.mode-switcher span:first-child {
+  margin-top: 0rem;
+}
 
 section.hero-sec .search-container {
   border: 1px solid var(--border-color-light);

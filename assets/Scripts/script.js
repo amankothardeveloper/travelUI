@@ -7,3 +7,23 @@ $(".dest-card-slider").slick({
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+  let themeMode = localStorage.getItem("theme-mode");
+
+  if (themeMode == "dark") {
+    $(".themer,.mode-switcher").addClass("dark");
+  } else {
+    $(".themer,.mode-switcher").removeClass("dark");
+  }
+
+  $(".mode-switcher").click(() => {
+    if ($(".themer").hasClass("dark")) {
+      $(".themer,.mode-switcher").removeClass("dark");
+      localStorage.setItem("theme-mode", "light");
+    } else {
+      $(".themer,.mode-switcher").addClass("dark");
+      localStorage.setItem("theme-mode", "dark");
+    }
+  });
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="themer">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,24 @@
               <li><a href="#">Community</a></li>
             </ul>
           </nav>
-          <div class="auth-container flex">
+          <div class="auth-container flex align-center">
+           
+            <div class="mode-switcher flex align-center flex-column overflow-hidden">
+              <span>
+                <svg>
+                  <use
+                    xlink:href="./assets/images/svg/SVG-Database.svg#sun"
+                  ></use>
+                </svg>
+              </span>
+              <span>
+                <svg>
+                  <use
+                    xlink:href="./assets/images/svg/SVG-Database.svg#moon"
+                  ></use>
+                </svg>
+              </span>
+            </div>
             <a href="#" class="btn theme-btn-alt">Login</a>
             <a href="#" class="btn theme-btn-dark">Sign Up</a>
           </div>
@@ -195,7 +212,10 @@
                     </textPath>
                   </text>
                 </svg>
-                <a href="#popular-destinations" class="scroll-link position-absolute"></a>
+                <a
+                  href="#popular-destinations"
+                  class="scroll-link position-absolute"
+                ></a>
               </div>
             </div>
           </div>
@@ -235,7 +255,10 @@
     <!-- Our Partner Section Ends --------------------------->
 
     <!-- Popular Destinations Section Starts---------------------------- -->
-    <section class="popular-destinations p-sec overflow-hidden" id="popular-destinations">
+    <section
+      class="popular-destinations p-sec overflow-hidden"
+      id="popular-destinations"
+    >
       <div class="site-container">
         <div class="flex flex-wrap align-center">
           <div class="w-50">
